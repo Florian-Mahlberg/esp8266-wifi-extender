@@ -13,19 +13,18 @@
 //DynamicJsonDocument Config(2048);
 
 
-#if (ARDDUINO >=100)
-  #include "Arduino.h"
+#if (ARDDUINO >= 100)
+#include "Arduino.h"
 #endif
 
 class WM {
-  public:
-  
-//  JsonObject obj = Config.as<JsonObject>();
-  void listDir(const char * dirname);
+public:
+
+  //  JsonObject obj = Config.as<JsonObject>();
+  void listDir(const char* dirname);
   void begin_server();
   void create_server();
   String get_credentials(int a);
-  
 };
 
 #endif
